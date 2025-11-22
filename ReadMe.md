@@ -34,7 +34,7 @@ The following scope diagram illustrates our objectes.
 
 ## Scope Diagram
 
-![scope diagram](.\imgs\scope_diagram.png)
+![scope diagram](\imgs\scope_diagram.png)
 
 ## Working Model Flow Diagram
 
