@@ -34,11 +34,11 @@ The following scope diagram illustrates our objectes.
 
 ## Scope Diagram
 
-![scope diagram](imgs\scope_diagram.png)
+![scope diagram](imgs/scope_diagram.png)
 
 ## Working Model Flow Diagram
 
-![working model flow diagram](imgs\working_model_flow_chart.png)
+![working model flow diagram](imgs/working_model_flow_chart.png)
 
 ## Data-set Used
 
@@ -59,7 +59,7 @@ Two datasets were used
 Exploratory Data Analysis (EDA) and dataset sampling for the SeaDronesSee dataset were performed in the following notebook:
 
 📄 EDA Notebook:
-[seadronessee_dataset_eda.ipynb](detection\notebooks\seadronessee_dataset_eda.ipynb)
+[seadronessee_dataset_eda.ipynb](detection/notebooks/seadronessee_dataset_eda.ipynb)
 
 The final sampled dataset used for training and evaluation has been uploaded to Kaggle and can be accessed here:
 
@@ -72,7 +72,7 @@ The MOBDrone dataset is used for inference purpose only so no preprocessing is d
 
 Details about the proposed architecture can be found in the project documentation.
 
-![enhanced_rt_detr_architecture](imgs\architecture.png)
+![enhanced_rt_detr_architecture](imgs/architecture.png)
 
 🔧 Model Training
 
@@ -106,11 +106,11 @@ https://www.kaggle.com/code/rameezakther/rt-detr-seadronessee-model-inference
 
 Sample images inferred by the trained model are shown below:
 
-![inference_img_1](detection\inferenced_images\inferenced_4.jpg) ![inference_img_2](.\detection\inferenced_images\inferenced_852.jpg) ![inference_img_3](.\detection\inferenced_images\inferenced_5042.jpg)
+![inference_img_1](detection/inferenced_images/inferenced_4.jpg) ![inference_img_2](detection/inferenced_images/inferenced_852.jpg) ![inference_img_3](detection/inferenced_images/inferenced_5042.jpg)
 
 ## Visually Augmented Kalman Tracker (VAKT)
 
-![vakt_architecture](imgs\vakt.png)
+![vakt_architecture](imgs/vakt.png)
 
 The proposed tracking code is present inside the directory:
 
@@ -125,29 +125,29 @@ https://www.kaggle.com/code/suryaks27/tracking
 The results and comparative analysis are present in the documentation.
 
 A batch of inferenced images are
-![inference_img_1](tracking\inferenced_images\1.jpg)
-![inference_img_2](tracking\inferenced_images\2.jpg)
-![inference_img_3](tracking\inferenced_images\3.jpg)
-![inference_img_4](tracking\inferenced_images\4.jpg)
+![inference_img_1](tracking/inferenced_images/1.jpg)
+![inference_img_2](tracking/inferenced_images/2.jpg)
+![inference_img_3](tracking/inferenced_images/3.jpg)
+![inference_img_4](tracking/inferenced_images/4.jpg)
 
 ## Localization
 
 Two methods are implemented for localization. One is when meta data such as GPS, altitude, camera intrinsics and extrinsics values of the drone are known and another method is when these meta data are present or given. Details about how this two methods are implemented are present in the documentation.
 
-![geo_loc_arch_1](imgs\geo_loc_with_data.png)
+![geo_loc_arch_1](imgs/geo_loc_with_data.png)
 Architecture of Localization when meta data is available
 
-![geo_loc_arch_2](imgs\geo_loc_without_data.png)
+![geo_loc_arch_2](imgs/geo_loc_without_data.png)
 Architecture of Localization when meta data is not available
 
-The first method of implementation is done for seadronessee dataset because meta is available for that dataset. This [notebook](.\localization\notebook\localization.ipynb) is the implementation of the method1. The method 2 is implemented on video which is from mobdrone dataset since it does not contain any meta data about the drone, and this method is implemented on the final integrated system.
+The first method of implementation is done for seadronessee dataset because meta is available for that dataset. This [notebook](localization/notebook/localization.ipynb) is the implementation of the method1. The method 2 is implemented on video which is from mobdrone dataset since it does not contain any meta data about the drone, and this method is implemented on the final integrated system.
 
 Some of the inferenced images by method are
 
-![inference_img_1](localization\inferenced_images\batch1\0.jpg)
-![inference_img_2](localization\inferenced_images\batch2\5041.jpg)
-![inference_img_3](localization\inferenced_images\batch3\18218.jpg)
-![inference_img_4](localization\inferenced_images\batch4\20442.jpg)
+![inference_img_1](localization/inferenced_images/batch1/0.jpg)
+![inference_img_2](localization/inferenced_images/batch2/5041.jpg)
+![inference_img_3](localization/inferenced_images/batch3/18218.jpg)
+![inference_img_4](localization/inferenced_images/batch4/20442.jpg)
 
 ## Integrated system
 
