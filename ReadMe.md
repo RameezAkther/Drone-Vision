@@ -34,11 +34,17 @@ The following scope diagram illustrates our objectes.
 
 ## Scope Diagram
 
-![scope diagram](imgs/scope_diagram.png)
+<figure style="text-align:center">
+  <img src="imgs/scope_diagram.png" alt="Scope diagram" />
+  <figcaption>Scope diagram</figcaption>
+</figure>
 
 ## Working Model Flow Diagram
 
-![working model flow diagram](imgs/working_model_flow_chart.png)
+<figure style="text-align:center">
+  <img src="imgs/working_model_flow_chart.png" alt="Working model flow diagram" />
+  <figcaption>Working model flow diagram</figcaption>
+</figure>
 
 ## Data-set Used
 
@@ -72,7 +78,10 @@ The MOBDrone dataset is used for inference purpose only so no preprocessing is d
 
 Details about the proposed architecture can be found in the project documentation.
 
-![enhanced_rt_detr_architecture](imgs/architecture.png)
+<figure style="text-align:center">
+  <img src="imgs/architecture.png" alt="Enhanced RT-DETR architecture" />
+  <figcaption>Enhanced RT-DETR architecture</figcaption>
+</figure>
 
 🔧 Model Training
 
@@ -106,11 +115,27 @@ https://www.kaggle.com/code/rameezakther/rt-detr-seadronessee-model-inference
 
 Sample images inferred by the trained model are shown below:
 
-![inference_img_1](detection/inferenced_images/inferenced_4.jpg) ![inference_img_2](detection/inferenced_images/inferenced_852.jpg) ![inference_img_3](detection/inferenced_images/inferenced_5042.jpg)
+<div style="text-align:center">
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="detection/inferenced_images/inferenced_4.jpg" alt="Inference 1" />
+    <figcaption>Inference 1</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="detection/inferenced_images/inferenced_852.jpg" alt="Inference 2" />
+    <figcaption>Inference 2</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="detection/inferenced_images/inferenced_5042.jpg" alt="Inference 3" />
+    <figcaption>Inference 3</figcaption>
+  </figure>
+</div>
 
 ## Visually Augmented Kalman Tracker (VAKT)
 
-![vakt_architecture](imgs/vakt.png)
+<figure style="text-align:center">
+  <img src="imgs/vakt.png" alt="VAKT architecture" />
+  <figcaption>VAKT architecture</figcaption>
+</figure>
 
 The proposed tracking code is present inside the directory:
 
@@ -125,29 +150,60 @@ https://www.kaggle.com/code/suryaks27/tracking
 The results and comparative analysis are present in the documentation.
 
 A batch of inferenced images are
-![inference_img_1](tracking/inferenced_images/1.jpg)
-![inference_img_2](tracking/inferenced_images/2.jpg)
-![inference_img_3](tracking/inferenced_images/3.jpg)
-![inference_img_4](tracking/inferenced_images/4.jpg)
+
+<div style="text-align:center">
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="tracking/inferenced_images/1.jpg" alt="Tracking inference 1" />
+    <figcaption>Tracking inference 1</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="tracking/inferenced_images/2.jpg" alt="Tracking inference 2" />
+    <figcaption>Tracking inference 2</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="tracking/inferenced_images/3.jpg" alt="Tracking inference 3" />
+    <figcaption>Tracking inference 3</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="tracking/inferenced_images/4.jpg" alt="Tracking inference 4" />
+    <figcaption>Tracking inference 4</figcaption>
+  </figure>
+</div>
 
 ## Localization
 
-Two methods are implemented for localization. One is when meta data such as GPS, altitude, camera intrinsics and extrinsics values of the drone are known and another method is when these meta data are present or given. Details about how this two methods are implemented are present in the documentation.
+<figure style="text-align:center">
+  <img src="imgs/geo_loc_with_data.png" alt="Localization with metadata" />
+  <figcaption>Architecture of Localization when meta data is available</figcaption>
+</figure>
 
-![geo_loc_arch_1](imgs/geo_loc_with_data.png)
-Architecture of Localization when meta data is available
-
-![geo_loc_arch_2](imgs/geo_loc_without_data.png)
-Architecture of Localization when meta data is not available
+<figure style="text-align:center">
+  <img src="imgs/geo_loc_without_data.png" alt="Localization without metadata" />
+  <figcaption>Architecture of Localization when meta data is not available</figcaption>
+</figure>
 
 The first method of implementation is done for seadronessee dataset because meta is available for that dataset. This [notebook](localization/notebook/localization.ipynb) is the implementation of the method1. The method 2 is implemented on video which is from mobdrone dataset since it does not contain any meta data about the drone, and this method is implemented on the final integrated system.
 
 Some of the inferenced images by method are
 
-![inference_img_1](localization/inferenced_images/batch1/0.jpg)
-![inference_img_2](localization/inferenced_images/batch2/5041.jpg)
-![inference_img_3](localization/inferenced_images/batch3/18218.jpg)
-![inference_img_4](localization/inferenced_images/batch4/20442.jpg)
+<div style="text-align:center">
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="localization/inferenced_images/batch1/0.jpg" alt="Localization inference 1" />
+    <figcaption>Localization inference 1</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="localization/inferenced_images/batch2/5041.jpg" alt="Localization inference 2" />
+    <figcaption>Localization inference 2</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="localization/inferenced_images/batch3/18218.jpg" alt="Localization inference 3" />
+    <figcaption>Localization inference 3</figcaption>
+  </figure>
+  <figure style="display:inline-block;margin:8px;text-align:center">
+    <img src="localization/inferenced_images/batch4/20442.jpg" alt="Localization inference 4" />
+    <figcaption>Localization inference 4</figcaption>
+  </figure>
+</div>
 
 ## Integrated system
 
